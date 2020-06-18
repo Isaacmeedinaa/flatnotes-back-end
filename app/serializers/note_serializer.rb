@@ -3,7 +3,7 @@ class NoteSerializer < ActiveModel::Serializer
   has_one :user
 
   def created_date
-    @object.created_at.to_date
+    @object.created_at.to_datetime
   end
   
 end
